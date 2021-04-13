@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Form</title>
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>Votre Avis Nous Intéresse</h1>
+    </div>
+    <table style="width: 100%">
+        <tr>
+            <th>
+                <form>
+                    <div>
+                        <fieldset>
+                            <legend align="left">Information Personelle</legend>
+                            <ol>
+                                <li>
+                                    <label for="name" style="float: left;">Nom:&nbsp;</label>
+                                    <input type="text" required="" style="float: left;" /><br><br>
+                                </li>
+                                <li>
+                                    <label for="birthday" style="float: left;">Date de naissance:&nbsp;</label>
+                                    <input type="date" required="" style="float: left;" /><br><br>
+                                </li>
+                                <li>
+                                    <label for="website" style="float: left;">Site:&nbsp;</label>
+                                    <input type="url" required="" placeholder="http://monsite.com"
+                                        style="float: left;" /><br><br>
+                                </li>
+                                <li>
+                                    <label for="emploi" style="float: left;">Emploi:&nbsp;</label>
+                                    <select name="emploi" id="emp" style="width: 200px; float: left;">
+                                        <option value="empt">--Please choose an option--</option>
+                                        <option value="Etudiant">Etudiant</option>
+                                        <option value="admin">Administrateur</option>
+                                        <option value="Réseau">Réseau</option>
+                                        <option value="Dev">Dévlopeur web</option>
+                                        <option value="Dev2">Web Designe</option>
+                                        <option value="Dev3">DevOps</option>
+                                    </select><br><br>
+                                </li>
+                                <li>
+                                    <label for="name" style="float: left;">Approx. Salair annuel:&nbsp;</label>
+                                    <input style="float: left;" type="number" id="quantity" name="quantity" min="0"
+                                        step="1000" placeholder="$" />
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </div>
+                </form>
+            </th>
+            <th>
+                <form>
+                    <div>
+                        <fieldset>
+                            <legend align="left">Information de Contact</legend>
+                            <ol>
+                                <li>
+                                    <label for="name" style="float: left;">Address ligne 1:</label>
+                                </li>
+                                <input type="text" id="name" name="user_name" style="float: left;" /><br><br>
+                                <li>
+                                    <label for="name" style="float: left;">Address ligne 2:</label>
+                                </li>
+                                <input type="text" id="name" name="user_name" style="float: left;" /><br><br>
+                                <li>
+                                    <label for="countries" style="float: left;">Pays:&nbsp;</label>
+                                    <select name="country" id="country" style="width: 225px; float: left;">
+                                        <option value="empt">--Please choose your Country--</option>
+                                        <option value="Algerie">Algérie</option>
+                                        <option value="Tunisie">Tunisie</option>
+                                        <option value="Maroc">Maroc</option>
+                                    </select><br><br>
+                                </li>
+                                <li>
+                                    <label style="float: left;">Tél:&nbsp;</label>
+                                    <input style="float: left;" type="text" placeholder="eg: +213 67..." /><br><br>
+                                </li>
+                                <li>
+                                    <label style="float: left;"> Courriel:&nbsp;</label>
+                                    <input style="float: left;" type="text" />
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </div>
+                </form>
+            </th>
+        </tr>
+    </table>
+    <div>
+        <h1>Préférences</h1>
+        <label> Choisir une coleur:&nbsp;</label>
+        <input type="color" id="head" name="head" src="nof.gif" />
+        </br>
+        <label>Sur une échelle de 1 a 10 quelle est votre degré d'enthousiame pour HTML5? </label>
+        <input type="range" min="1" max="10" value="5" id="myRange"
+            oninput="this.nextElementSibling.value = this.value" />
+        <output>5</output>
+        <p><button type="submit" style="width: 100px">Envoyer</button></p>
+    </div>
+</body>
+
+</html>
